@@ -1,7 +1,14 @@
 spring:
   application:
     name: Config-Default
-
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 eureka:
   instance:
     prefer-ip-address: true 
